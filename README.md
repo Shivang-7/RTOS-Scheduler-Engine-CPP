@@ -6,7 +6,7 @@ A lightweight, deterministic Real-Time Operating System (RTOS) simulation engine
 
 ## Key Features
 
-- **Schedulability Validation (Liu-Layland Test)**: Automatically computes CPU utilization bounds ($U = \sum \frac{C_i}{T_i} \le n(2^{1/n} - 1)$) to verify whether a task set is mathematically guaranteed to meet deadlines before execution.
+- **Schedulability Validation (Liu-Layland Test)**: Automatically computes CPU utilization bounds to verify whether a task set is mathematically guaranteed to meet deadlines before execution.
 - **Static Priority Scheduling (RMS)**: Implements Rate Monotonic Scheduling where shorter task periods receive higher static priorities.
 - **Dynamic Priority Scheduling (EDF)**: Implements Earliest Deadline First where priorities are evaluated dynamically based on absolute deadline proximity.
 - **Priority Inheritance Protocol (PIP)**: Prevents Priority Inversion and task starvation by dynamically boosting the priority of resource-holding low-priority tasks.
